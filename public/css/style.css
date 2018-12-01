@@ -321,7 +321,7 @@ header{
 .intro{
     height: 100vh;
     background-color: lightgrey;
-    background: url("../images/hoshino-ai-60708-unsplash.jpg") no-repeat fixed top center/ cover;
+    background: url("../images/landing.jpg") no-repeat fixed top center/ cover;
     /* background: url("../images/jerry-kiesewetter-198984-unsplash.jpg") no-repeat fixed top center/ cover; */
     
 }

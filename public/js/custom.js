@@ -43,9 +43,7 @@ $(document).ready(function () {
       $('#subscribeEmail').val('');
       $('#subscribeFirstName').val('');
       $('#subscribeLastName').val('');
-      $(this).focus(function () {
-        this.blur();
-      })
+      $('#subscribeBtn').blur();
       setTimeout(function () {
         $('#mailingSuccess').css('display', 'none').fadeOut(750);
       }, 1500);
@@ -57,20 +55,13 @@ $(document).ready(function () {
       $('#subscribeEmail').val('');
       $('#subscribeFirstName').val('');
       $('#subscribeLastName').val('');
-      $(this).blur()
+      $('#subscribeBtn').blur();
       setTimeout(function () {
         $('#mailingFailure').css('display', '').fadeOut(750);
       }, 1500);
 
     });
   })
-
-  // $("body").click(function (event) {
-  //   // only do this if navigation is visible, otherwise you see jump in navigation while collapse() is called 
-  //   if ($(".navbar-collapse").is(":visible") && $(".navbar-toggle").is(":visible")) {
-  //     $('.navbar-collapse').collapse('toggle');
-  //   }
-  // });
 
   $('#contactBtn').click(function (e) {
     e.preventDefault();
@@ -98,9 +89,7 @@ $(document).ready(function () {
       $('#contactName').val('');
       $('#contactPhone').val('');
       $('#contactMessage').val('');
-      $(this).focus(function () {
-        this.blur();
-      })
+      $('#contactBtn').blur();
       setTimeout(function () {
         $('#contactSuccess').css('display', 'none').fadeOut(750);
       }, 1500);
@@ -113,7 +102,7 @@ $(document).ready(function () {
       $('#contactName').val('');
       $('#contactPhone').val('');
       $('#contactMessage').val('');
-      $(this).blur()
+      $('#contactBtn').blur();
       setTimeout(function () {
         $('#contactFailure').css('display', '').fadeOut(750);
       }, 1500);
